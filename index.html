@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple hello world webpage with modern design">
+    <title>Hello World - Basic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <div class="nav-brand">
+                    <h1 class="logo">Hello World</h1>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main" role="main">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="greeting-card">
+                        <h2 class="greeting-title" id="greeting-title">
+                            Hello, World!
+                        </h2>
+                        <p class="greeting-subtitle">
+                            Welcome to a simple yet elegant hello world webpage
+                        </p>
+                        <div class="greeting-actions">
+                            <button 
+                                class="btn btn-primary" 
+                                id="greet-btn"
+                                type="button"
+                                aria-describedby="greeting-description"
+                            >
+                                Say Hello
+                            </button>
+                            <button 
+                                class="btn btn-secondary" 
+                                id="reset-btn"
+                                type="button"
+                                aria-label="Reset greeting"
+                            >
+                                Reset
+                            </button>
+                        </div>
+                        <div class="greeting-output" id="greeting-output" aria-live="polite">
+                            <!-- Dynamic content will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Decorative elements -->
+                <div class="decorative-shapes" aria-hidden="true">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2024 Hello World Basic. 
+                    <span class="footer-highlight">Made with ❤️</span>
+                </p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link" tabindex="0">About</a>
+                    <a href="#" class="footer-link" tabindex="0">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Screen reader only description -->
+    <div id="greeting-description" class="sr-only">
+        Click this button to display a personalized greeting message
+    </div>
+
+    <!-- Loading indicator -->
+    <div class="loading-indicator" id="loading-indicator" aria-hidden="true">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
