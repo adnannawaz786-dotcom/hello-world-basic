@@ -10,7 +10,7 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <NeonText text="hello adnan" className="text-6xl font-cyberpunk" />
+        <NeonText text="hello mate" className="text-6xl font-cyberpunk" />
       </motion.div>
     </div>
   )
