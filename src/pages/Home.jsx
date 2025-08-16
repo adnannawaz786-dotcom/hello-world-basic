@@ -4,7 +4,7 @@ import NeonText from '../components/NeonText';
 const Home = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-black">
-      <NeonText text="Hello Adnan" />
+      <NeonText text="Hello Mate" />
     </div>
   );
 };
