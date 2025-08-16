@@ -1,19 +1,17 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { NeonText } from './components/NeonText'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home, About } from './pages/Home';
+// Preserve all other existing imports
 
-function App() {
+const App = () => {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <NeonText text="hello mate" className="text-6xl font-cyberpunk" />
-      </motion.div>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
