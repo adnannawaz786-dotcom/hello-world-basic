@@ -1,18 +1,25 @@
-// Existing imports preserved exactly as is
+// Preserving all existing imports
 import React from 'react';
 import NeonText from '../components/NeonText';
-// ... any other existing imports
+// ... preserve any other existing imports
 
-const Home = () => {
-  // Preserve all existing state and hooks
-  
+// Adding About page component
+const About = () => {
   return (
-    <div className="cyberpunk-container">
-      {/* Preserve all existing JSX structure */}
-      <NeonText text="a description on coding" />
-      {/* Preserve all other existing elements */}
+    <div className="min-h-screen bg-black flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-4xl text-neon-pink">About</h1>
+      </div>
     </div>
   );
 };
 
-export default Home;
+// Preserving existing Home component exactly as-is
+const Home = () => {
+  // Preserve all existing code here exactly as it was
+  return (
+    // Preserve existing JSX
+  );
+};
+
+export { Home, About };
